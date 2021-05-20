@@ -104,7 +104,7 @@ namespace beadandó
         }
 
         private void lbActiveBikes_SelectedIndexChanged(object sender, EventArgs e)
-        {if (lbActiveBikes.SelectedIndex >0)
+        {if (lbActiveBikes.SelectedIndex >=0)
             {
                 tbMarkaShow.Text = aktivbringa[lbActiveBikes.SelectedIndex].Marka;
                 tbTipusShow.Text = aktivbringa[lbActiveBikes.SelectedIndex].Tipus;
@@ -134,7 +134,7 @@ namespace beadandó
 
         private void lbChangedBikes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (lbChangedBikes.SelectedIndex > 0)
+            if (lbChangedBikes.SelectedIndex >= 0)
             {
                 tbEmarkaShow.Text = atalakitottbringak[lbChangedBikes.SelectedIndex].Marka;
                 tbEtipusShow.Text = atalakitottbringak[lbChangedBikes.SelectedIndex].Tipus;
